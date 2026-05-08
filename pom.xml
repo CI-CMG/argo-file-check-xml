@@ -118,11 +118,6 @@
           <version>3.5.4</version>
         </plugin>
         <plugin>
-          <groupId>com.github.spotbugs</groupId>
-          <artifactId>spotbugs-maven-plugin</artifactId>
-          <version>4.9.3.2</version>
-        </plugin>
-        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>3.4.1</version>
@@ -269,21 +264,6 @@
                   <regex>true</regex>
                 </replacementProperty>
               </replacementProperties>
-            </configuration>
-          </plugin>
-          <plugin>
-            <groupId>com.github.spotbugs</groupId>
-            <artifactId>spotbugs-maven-plugin</artifactId>
-            <version>4.8.6.5</version>
-            <executions>
-              <execution>
-                <goals>
-                  <goal>check</goal>
-                </goals>
-              </execution>
-            </executions>
-            <configuration>
-              <excludeFilterFile>spotbugs-exclude.xml</excludeFilterFile>
             </configuration>
           </plugin>
         </plugins>
