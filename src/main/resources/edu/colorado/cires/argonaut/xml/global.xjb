@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bindings
+  xmlns="http://java.sun.com/xml/ns/jaxb"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+  version="2.1">
+
+  <globalBindings generateElementClass="true">
+    <javaType xmlType="xs:integer" name="java.lang.Integer"/>
+    <javaType xmlType="xs:decimal" name="java.lang.Double"/>
+    <xjc:simple/>
+  </globalBindings>
+
+  <bindings schemaLocation="FileCheckResults.xsd">
+    <schemaBindings>
+      <package name="edu.colorado.cires.argonaut.xml.filecheck" />
+    </schemaBindings>
+  </bindings>
+
+</bindings>
